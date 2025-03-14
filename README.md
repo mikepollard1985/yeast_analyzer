@@ -5,7 +5,7 @@ This tool analyzes DNA sequences from FASTA or FASTQ files, calculating and plot
 ## Setup Instructions
 
 1. Make sure you have Python 3 installed on your computer. You can download it from [python.org](https://python.org).
-   - if you have a Mac, Python comes preinstalled 
+   - if you have a Mac, Python comes preinstalled
 
 2. Open a terminal (Command Prompt on Windows, Terminal on Mac/Linux)
 
@@ -41,8 +41,8 @@ python analyze_sequence.py -f your_sequence.fastq
 ### All Available Options
 
 - `-f` or `--file`: Your sequence file (required)
-- `-w` or `--window`: Window size (default: 100)
-- `-s` or `--step`: Step size (default: 25)
+- `-w` or `--window`: Window size (default: 300)
+- `-s` or `--step`: Step size (default: 5)
 - `--start`: Start position for analysis (optional)
 - `--end`: End position for analysis (optional)
 

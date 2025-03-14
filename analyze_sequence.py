@@ -9,11 +9,11 @@ import pandas as pd
 def parse_args():
 	parser = argparse.ArgumentParser(description='Analyze nucleotide composition in sliding windows')
 	parser.add_argument('-f', '--file', required=True, type=str,
-					  help='Path to input FASTA/FASTQ file')
-	parser.add_argument('-w', '--window', type=int, default=100,
-					  help='Window size for sliding window analysis (default: 100)')
-	parser.add_argument('-s', '--step', type=int, default=25,
-					  help='Step size for sliding window (default: 25, must not exceed window size)')
+					  help='Path to input FASTA/FASTQ/FSA file')
+	parser.add_argument('-w', '--window', type=int, default=300,
+					  help='Window size for sliding window analysis (default: 300)')
+	parser.add_argument('-s', '--step', type=int, default=5,
+					  help='Step size for sliding window (default: 5, must not exceed window size)')
 	parser.add_argument('--start', type=int,
 					  help='Start position for analysis (optional, 1-based)')
 	parser.add_argument('--end', type=int,
